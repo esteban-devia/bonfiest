@@ -1,0 +1,778 @@
+.product-section {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    z-index: -1;
+}
+
+.product-main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 9%;
+    margin-bottom: 5.6em;
+    border-radius: 2px;
+    background-color: rgba(3, 38, 169, 0.4);
+    filter: drop-shadow(0px 25px 4px rgba(1, 23, 99, 0.3));
+}
+
+.product-inner {
+    display: flex;
+    margin: 2em 4em;
+    margin-right: 7em;
+}
+
+.backprod {
+    margin: 1em 9% 0.5em;
+}
+
+.box-left {
+    margin-right: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.prod-ref img {
+    width: 435px;
+}
+
+.prod-links {
+    border: 1px solid #ffffff;
+    width: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prod-links:last-of-type {
+    margin-top: 1.5em;
+}
+
+.prod-links img {
+    height: 25px;
+    padding: 0.5em 1em;
+    padding-left: 0;
+}
+
+.prod-links a {
+    font-family: 'Swiss-BC';
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.prod-links a:hover {
+    border-bottom: 0.1em solid #ffffff;
+}
+
+.box-right {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.prodlogo {
+    height: 70px;
+    margin-bottom: 0.5em;
+}
+
+.box-right p {
+    color: #ffffff;
+    font-family: 'Swiss-R';
+    font-size: 1.1em;
+    text-align: justify;
+    margin-top: 0.5em;
+}
+
+.box-right a {
+    height: fit-content;
+    font-family: 'Swiss-BC';
+    color: #ffffff;
+    letter-spacing: 2px;
+    padding: 0.7em 3.5em;
+    text-decoration: none;
+    background: #c01731;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.box-right a:last-of-type {
+    padding: 0.7em 2.3em;
+}
+
+.box-right a img {
+    width: 14px;
+    margin-left: 0.5em;
+}
+
+.box-right hr {
+    display: block;
+    width: 100%;
+    margin: 1.5em 0;
+}
+
+.box-right h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-family: 'Swiss-Re3';
+    margin: 0.5em;
+    margin-left: 0;
+}
+
+.other-prod {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 0.5em;
+    padding: 0 2em;
+    border: 1px solid #ffffff;
+}
+
+.slider h1,
+.prod-main-mob {
+    display: none;
+}
+
+.mini {
+    position: absolute;
+    top: 82px;
+    right: 8%;
+    width: 350px;
+    height: 350px;
+}
+
+.mini-box img {
+    width: 350px;
+    height: 350px;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(5, 32, 79, 0.6);
+    z-index: 1;
+    display: none;
+}
+
+.video div {
+    position: fixed;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15%;
+    margin-top: 1em;
+}
+
+.video a {
+    position: relative;
+    align-self: flex-end;
+    padding: 1em;
+    z-index: 1;
+}
+
+.video a img {
+    width: 30px;
+}
+
+.video iframe {
+    width: 70vw;
+    height: 65vh;
+}
+
+.product-mob {
+    display: none;
+}
+
+@media screen and (max-width: 1680px) {
+    .box-right p {
+        font-size: 1.3em;
+    }
+    .product-inner {
+        margin: 2em;
+        margin-right: 6em;
+    }
+    .mainProd {
+        margin: 0 10em;
+    }
+    .box-left {
+        margin-right: 2em;
+    }
+    .prod-ref img {
+        width: 400px;
+    }
+    .prodlogo {
+        height: 80px;
+    }
+    .box-right p {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .mini {
+        top: 85px;
+        width: 250px;
+        height: 250px
+    }
+    .mini-box img {
+        width: 250px;
+        height: 250px
+    }
+    .product-inner {
+        margin: 1.5em;
+        margin-right: 5em;
+    }
+    .prod-ref img {
+        width: 360px;
+    }
+    .prod-links {
+        width: 13em;
+    }
+    .prod-links img {
+        height: 25px;
+    }
+    .prod-links a {
+        font-size: 1em;
+    }
+    .box-right {
+        padding-bottom: 0;
+    }
+    .prodlogo {
+        height: 65px;
+    }
+    .box-right p {
+        font-size: 1em;
+    }
+    .box-right a {
+        padding: 0.5em 3em;
+        font-size: 1em;
+    }
+    .box-right a:last-of-type {
+        padding: 0.5em 2.9em;
+    }
+    .box-right hr {
+        margin: 1em 0;
+    }
+    .box-right h3 {
+        font-size: 1.5em;
+        margin-top: 0;
+    }
+    .other-prod {
+        width: 120px;
+        height: 120px;
+    }
+    .video a img {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .product-inner {
+        margin: 0.8em;
+        margin-right: 5em;
+    }
+    .prod-ref img {
+        width: 260px;
+    }
+    .mainProd {
+        margin: 0 8em;
+    }
+    .product-links {
+        width: 11em;
+    }
+    .prod-links:last-of-type {
+        margin-top: 1em;
+    }
+    .prod-links img {
+        height: 20px;
+    }
+    .product-links a {
+        font-size: 0.9em;
+    }
+    .prodlogo {
+        height: 45px;
+    }
+    .box-right p {
+        font-size: 0.9em;
+    }
+    .box-right a {
+        font-size: 1em;
+        padding: 0.5em 3em 0.4em;
+    }
+    .box-right hr {
+        margin: 0.8em 0;
+    }
+    .box-right h3 {
+        font-size: 1.2em;
+    }
+    .other-prod {
+        height: 95px;
+        width: 95px;
+    }
+    .box-right a:last-of-type {
+        padding: 0.5em 1.75em 0.4em;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    .box-right a:last-of-type {
+        padding: 0.5em 2.1em 0.4em;
+    }
+    .video iframe {
+        width: 80vw;
+    }
+    .video div {
+        margin: 0 10%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .product-inner {
+        margin-right: 4em;
+    }
+    .prod-head img {
+        width: 125px;
+    }
+    .box-right p {
+        margin-right: 0;
+    }
+    .mini {
+        right: 3%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .product-section {
+        position: unset;
+        height: auto;
+        flex-direction: column;
+    }
+    .product-mob {
+        display: flex;
+        border: none;
+        margin: 2em auto;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+    .mainProd {
+        margin: 0 0em;
+    }
+    .slider-mob {
+        border: none;
+    }
+    .product-title {
+        display: flex;
+        justify-content: center;
+        margin-top: -3em;
+        margin-bottom: 2em;
+    }
+    .producttitle {
+        font-size: 2.7em;
+        font-family: 'Swiss-H';
+        text-align: center;
+        color: #01ffff;
+        margin: 0;
+        padding: 0.67em;
+        position: unset;
+        letter-spacing: 10px;
+        border-left: 2px solid #01074f;
+        border-right: 2px solid #01074f;
+    }
+    .slider h1 {
+        display: block;
+        margin: 0;
+        margin-top: 1em;
+        font-family: 'BebasN';
+        font-size: 5em;
+        letter-spacing: 5px;
+        color: #082457;
+    }
+    .product-main,
+    .mini {
+        display: none;
+    }
+    .prod-main-mob {
+        display: block;
+        margin-top: 1em;
+    }
+    .prod-inner-mob {
+        display: flex;
+        flex-direction: column;
+        margin: 0 2em;
+        filter: drop-shadow(0px 25px 4px rgba(17, 29, 97, 0.3));
+        background-color: rgba(3, 38, 169, 0.4);
+        margin-bottom: 12em;
+        margin-top: 3em;
+    }
+    .prod-inner-second {
+        padding: 0 5em;
+    }
+    .prod-box-main {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -3em;
+    }
+    .logo-box {
+        margin: auto;
+        margin-top: 2em;
+    }
+    .logo-box img {
+        width: 360px;
+    }
+    .prod-box {
+        margin: auto;
+        position: relative;
+        top: -2em;
+    }
+    .prod-text {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -5em;
+    }
+    .prod-text a {
+        background: #c22649;
+        height: fit-content;
+        color: #ffffff;
+        letter-spacing: 2px;
+        padding: 0.5em 2em;
+        text-decoration: none;
+        margin: auto;
+        text-align: center;
+        font-size: 1.8em;
+        font-family: 'Swiss-BC';
+        display: flex;
+        align-items: center;
+    }
+    .prod-text a img {
+        margin-left: 1em;
+        width: 13px;
+    }
+    .prod-text p {
+        color: #ffffff;
+        font-family: 'Dinnex-R';
+        font-size: 1.5em;
+        margin-top: 2em;
+        text-align: justify;
+    }
+    .prod-links-mob {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3em;
+    }
+    .prod-links-mob div {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 1em;
+        border: 1px solid #ffffff;
+    }
+    .prod-links-mob img {
+        width: 50px;
+    }
+    .prod-links-mob a {
+        color: #ffffff;
+        font-family: 'Swiss-BC';
+        font-size: 1.5em;
+        padding: 0 1em;
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+    .other-prod-mob {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+    .other-prod-mob h3 {
+        color: #ffffff;
+        font-family: 'Swiss-H';
+        font-size: 2em;
+        letter-spacing: 3px;
+        margin-bottom: 0;
+    }
+    .other-prod-mob img {
+        width: 300px;
+        height: 300px;
+    }
+    .other-prod-mob a {
+        background: #c22649;
+        font-family: 'Swiss-BC';
+        color: #ffffff;
+        letter-spacing: 2px;
+        padding: 0.5em 2em;
+        text-decoration: none;
+        font-size: 1.8em;
+    }
+    .other-prod-mob a img {
+        width: 13px;
+        height: auto;
+        margin-left: 1em;
+    }
+    .mini {
+        position: fixed;
+        right: -17%;
+        top: 14em;
+        opacity: 0.7;
+    }
+    .video {
+        height: auto;
+    }
+    .video div {
+        padding: 33% 2%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(5, 32, 79, 0.6);
+        backdrop-filter: blur(8px);
+        top: 0;
+        margin: 0;
+    }
+    .video a {
+        background: none;
+        position: absolute;
+        top: 7em;
+        right: 3em;
+    }
+    .video iframe {
+        width: 96vw;
+        height: 44vh;
+    }
+    @media screen and (max-height: 600px) {
+        .prod-links-mob a {
+            font-size: 1.3em;
+        }
+        .prod-links-mob img {
+            width: 25px;
+        }
+        .video div {
+            padding: 13% 10%;
+        }
+        .video a {
+            top: 2em;
+            right: 11em;
+        }
+        .video a img {
+            width: 20px;
+        }
+        .video iframe {
+            width: 80vw;
+            height: 66vh;
+        }
+    }
+    @media screen and (max-height: 420px) {
+        .video div {
+            padding: 6% 11%;
+        }
+        .video a {
+            top: 0em;
+            right: 12.5em;
+        }
+        .video iframe {
+            width: 78vw;
+            height: 80vh;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .producttitle {
+        font-size: 2.5em;
+    }
+    .prod-inner-second {
+        padding: 0 3em;
+    }
+    .prod-box img {
+        width: 350px;
+        height: 350px;
+    }
+    .prod-text p {
+        font-size: 1.1em;
+    }
+    .prod-text a {
+        font-size: 1.2em;
+    }
+    .prod-links-mob {
+        margin-bottom: 2em;
+    }
+    .prod-links-mob img {
+        width: 30px;
+    }
+    .prod-links-mob a {
+        font-size: 1em;
+    }
+    .other-prod-mob img {
+        width: 200px;
+        height: 200px;
+    }
+    .other-prod-mob h3 {
+        font-size: 1.7em;
+    }
+    .other-prod-mob a {
+        font-size: 1.2em;
+        padding: 0.7em 2em;
+        top: -5em;
+    }
+    .mini {
+        right: -20%;
+        top: 12em;
+        width: 200px;
+        height: 200px;
+    }
+    .mini-box img {
+        width: 200px;
+        height: 200px;
+    }
+    @media screen and (max-height: 375px) {
+        .video div {
+            padding: 6% 11%;
+        }
+        .video a {
+            right: 10.5em;
+        }
+    }
+    @media screen and (max-height: 320px) {
+        .video a {
+            right: 10.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .producttitle {
+        font-size: 2em;
+        padding: 0.3em;
+    }
+    .product-title {
+        margin-top: -2em;
+    }
+    .slider h1 {
+        font-size: 3.5em;
+        margin-top: 0.5em;
+    }
+    .prod-inner-mob {
+        margin: 0 1em 10em;
+    }
+    .prod-inner-second {
+        padding: 0 1.2em;
+    }
+    .logo-box img {
+        width: 150px;
+    }
+    .prod-text {
+        top: -4em;
+    }
+    .mini {
+        width: 170px;
+        height: 170px;
+    }
+    .mini-box img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .producttitle {
+        margin: 0;
+        letter-spacing: 5px;
+    }
+    .slider h1 {
+        font-size: 2.8em;
+    }
+    .prod-text a {
+        font-size: 1em;
+    }
+    .prod-text p {
+        font-size: 1em;
+    }
+    .prod-links-mob {
+        margin-bottom: 2em;
+    }
+    .prod-links-mob img {
+        width: 20px;
+    }
+    .prod-links-mob a {
+        font-size: 1em;
+        padding-right: 0;
+    }
+    .other-prod-mob h3 {
+        font-size: 1.5em;
+    }
+    .other-prod-mob a {
+        font-size: 1em;
+        top: -6em;
+    }
+    .prod-inner-mob {
+        margin-bottom: 8em;
+    }
+    .mini {
+        width: 150px;
+        height: 150px;
+        top: 9em;
+    }
+    .mini-box img {
+        width: 150px;
+        height: 150px;
+    }
+    .video div {
+        padding: 50% 2%;
+    }
+    .video a {
+        top: 8em;
+        right: 2em;
+    }
+    .video a img {
+        width: 20px;
+    }
+    .video iframe {
+        height: 33vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .prod-links-mob div {
+        padding: 0.5em;
+    }
+    .other-prod-mob h3 {
+        font-size: 1.3em;
+    }
+    .prod-box img {
+        width: 270px;
+        height: 270px;
+    }
+    .other-prod-mob img {
+        width: 170px;
+        height: 170px;
+    }
+    .producttitle {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .producttitle {
+        font-size: 1.3em;
+    }
+    .prod-text a,
+    .prod-text p,
+    .other-prod-mob a {
+        font-size: 0.8em;
+    }
+    .other-prod-mob h3 {
+        font-size: 1em;
+    }
+    .prod-links-mob a {
+        font-size: 0.7em;
+    }
+    .video a {
+        top: 7em;
+    }
+}

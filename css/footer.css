@@ -1,0 +1,164 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #d9dae0;
+    color: #001253;
+    width: 100%;
+    padding: 1.5em 0;
+    position: fixed;
+    bottom: 0;
+}
+
+footer div {
+    display: flex;
+}
+
+footer div a {
+    font-family: 'Swiss-BC';
+    padding: 0 2em;
+    border-right: 1px solid #001253;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #001253;
+}
+
+footer span {
+    font-family: 'Swiss-BC';
+    padding: 0 2em;
+    font-size: 1.1em;
+}
+
+footer p {
+    font-family: 'Swiss-R';
+    font-size: 1em;
+    max-width: 81em;
+    margin-bottom: 0;
+}
+
+.footer-mob {
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    footer {
+        padding: 0.7em 0;
+    }
+    footer div a,
+    footer span {
+        font-size: 1em;
+    }
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    footer {
+        padding: 0.5em 0;
+    }
+    footer p {
+        font-size: 0.65em;
+    }
+    footer div a,
+    footer span {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    footer div a,
+    footer span {
+        font-size: 0.8em;
+    }
+    footer p {
+        max-width: 64em;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        padding: 1em 0;
+    }
+    footer div {
+        display: none;
+    }
+    footer p {
+        max-width: 60em;
+        font-size: 0.8em;
+    }
+    .footer-mob {
+        display: inline;
+        font-size: 1.3em;
+    }
+    @media screen and (max-height: 540px) {
+        footer {
+            padding: 0.8em 0;
+        }
+        .footer-mob {
+            font-size: 0.8em;
+        }
+        footer p {
+            max-width: 71em;
+            font-size: 0.5em;
+        }
+    }
+    @media screen and (max-height: 420px) {
+        footer {
+            padding: 0.5em 0;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    footer {
+        padding: 1em 0;
+    }
+    .footer-mob {
+        font-size: 1em;
+    }
+    footer p {
+        font-size: 0.5em;
+    }
+    @media screen and (max-height: 375px) {
+        footer {
+            padding: 0.5em 0;
+        }
+        footer p {
+            max-width: 70em;
+            font-size: 0.5em;
+        }
+        .footer-mob {
+            font-size: 0.8em;
+        }
+    }
+    @media screen and (max-height: 320px) {
+        footer p {
+            max-width: 55em;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    footer {
+        padding: 0.5em 0;
+    }
+    .footer-mob {
+        font-size: 0.7em;
+    }
+    footer p {
+        font-size: 0.4em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .search input {
+        font-size: 1em;
+    }
+    footer p {
+        font-size: 0.3em;
+        max-width: 74em;
+    }
+}

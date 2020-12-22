@@ -1,0 +1,272 @@
+#first-mob {
+    display: none;
+}
+
+.buy-section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 85%;
+    margin-bottom: 140px;
+    color: #ffffff;
+    background-color: rgba(1, 16, 100, 0.8);
+}
+
+.back {
+    font-family: 'Swiss-C2';
+    margin: 1.5em 11em;
+    margin-bottom: 0;
+}
+
+.back a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Dinnex-R';
+    font-size: 1.1em;
+    letter-spacing: 3px;
+}
+
+.main-grid {
+    padding-left: 7em;
+    padding-right: 4em;
+}
+
+.main-grid h1 {
+    font-family: 'Swiss-H';
+    font-size: 3.1em;
+    letter-spacing: 3px;
+    margin: 1.8em 0 0.5em;
+}
+
+.main-grid p {
+    margin: 0;
+    font-family: 'Swiss-R';
+    font-size: 1.2em;
+}
+
+.main-grid h3 {
+    font-family: 'Swiss-H';
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    margin: 1.8em 0 1em;
+}
+
+.logos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+}
+
+.buy-logo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    background: #ffffff;
+    border-radius: 1em;
+    align-items: center;
+    width: 18.3%;
+    justify-content: flex-end;
+}
+
+.buy-logo:nth-of-type(5n) {
+    margin-right: 0;
+}
+
+.buy-logo img {
+    max-width: 100%;
+    height: auto;
+    padding: 0.7em 0;
+    margin: auto;
+}
+
+.buy-logo a {
+    text-decoration: none;
+    border: 1px solid #49467e;
+    padding: 0.4em 0.5em 0.2em;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    color: #49467e;
+    font-family: 'Swiss-R';
+}
+
+.buy-logo:hover>a {
+    background-color: #009cde;
+    color: #ffffff;
+    border: none;
+}
+
+.back-mob {
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .main-grid {
+        padding-left: 4em;
+        padding-right: 2em;
+    }
+    .back {
+        margin: 1.5em 8em 0;
+    }
+    .back a {
+        font-size: 1em;
+    }
+    .main-grid h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .buy-logo {
+        width: 23%;
+    }
+    .buy-logo:nth-of-type(5n) {
+        margin-right: 1em;
+    }
+    .buy-logo:nth-of-type(4n) {
+        margin-right: 0;
+    }
+    .buy-logo a {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-grid {
+        padding-left: 3em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .buy-main {
+        flex-direction: column;
+    }
+    #first-mob {
+        display: block;
+        padding-top: 1em;
+    }
+    .back-mob {
+        background: #c22649;
+        padding: 0.5em;
+        width: fit-content;
+        display: block;
+        z-index: 1;
+    }
+    .back-mob img {
+        width: 25px;
+    }
+    .buy-section {
+        margin-bottom: 14em;
+    }
+    .back {
+        display: none;
+    }
+    .main-grid h1 {
+        font-size: 3.4em;
+        margin: 1em 0;
+        margin-bottom: 0;
+    }
+    .main-grid h3 {
+        font-size: 1.5em;
+        margin-top: 1.5em;
+    }
+    .main-grid p {
+        margin-top: 1.5em;
+        margin-right: 1em;
+        font-size: 1em;
+    }
+    .buy-logo {
+        width: 31%;
+    }
+    .buy-logo:nth-of-type(4n) {
+        margin-right: 1em;
+    }
+    .buy-logo:nth-of-type(3n) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .back-mob {
+        padding: 0.5em;
+    }
+    .back-mob img {
+        width: 25px;
+    }
+    .main-grid h1 {
+        font-size: 2.3em;
+    }
+    .main-grid {
+        padding-left: 2em;
+        padding-right: 1em;
+    }
+    .buy-section {
+        width: 85%;
+    }
+    .buy-logo {
+        width: 42%;
+        padding: 0 0.5em;
+    }
+    .buy-logo:nth-of-type(3n) {
+        margin-right: 1em;
+    }
+    .buy-logo:nth-of-type(2n) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .main-grid h1 {
+        font-size: 1.8em;
+    }
+    .main-grid p {
+        font-size: 0.9em;
+    }
+    .back-mob {
+        padding: 0.4em;
+    }
+    .back-mob img {
+        width: 15px;
+    }
+    .main-grid {
+        padding-left: 1.3em;
+    }
+    .buy-section {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .back-mob img {
+        width: 15px;
+    }
+    .main-grid {
+        padding-left: 1em;
+    }
+    .buy-section {
+        width: 95%;
+    }
+    .main-grid p {
+        font-size: 0.9em;
+    }
+    .main-grid h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .buy-logo {
+        width: 41%;
+        padding: 0 0.5em;
+    }
+    .buy-logo a {
+        font-size: 0.9em;
+    }
+    .main-grid h1 {
+        font-size: 1.5em;
+    }
+    .main-grid p {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,1057 @@
+@font-face {
+    font-family: 'Dinnex-L';
+    src: url("fonts/DINNEXTLTPRO-LIGHT-1.OTF");
+}
+
+@font-face {
+    font-family: 'Dinnex-R';
+    src: url("fonts/DINNEXTLTPRO-REGULAR_0.OTF");
+}
+
+@font-face {
+    font-family: 'Dinnex-M';
+    src: url("fonts/DINNEXTLTPRO-MEDIUM_0.OTF");
+}
+
+@font-face {
+    font-family: 'Dinnex-BC';
+    src: url("fonts/DINNEXTLTPRO-BOLDCONDENSED.OTF");
+}
+
+@font-face {
+    font-family: 'BebasN';
+    src: url("fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Swiss-BC';
+    src: url("fonts/Swiss721BT-BlackCondensed.ttf");
+}
+
+@font-face {
+    font-family: 'Swiss-M';
+    src: url("fonts/Swiss721BT-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Swiss-H';
+    src: url("fonts/Swiss721BT-Heavy.ttf");
+}
+
+@font-face {
+    font-family: 'Swiss-R';
+    src: url("fonts/Swiss721BT-Roman.ttf");
+}
+
+@font-face {
+    font-family: 'Swiss-Re3';
+    src: url("fonts/Swis721BT-Regular3.ttf");
+}
+
+@font-face {
+    font-family: 'Swiss-C2';
+    src: url("fonts/Swis721BT-Condensed2.ttf");
+}
+
+body {
+    margin: 0;
+    height: auto;
+    background: url(../imgs/home/desck-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+a {
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    background: #000052;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 6.25em;
+    font-family: 'Swiss-BC';
+}
+
+.logo {
+    display: flex;
+}
+
+#tq-logo {
+    margin-right: 1.1em;
+}
+
+#bf-logo {
+    padding: 0 0.8em;
+    border-left: 2px solid #ffffff;
+}
+
+.menu-list a {
+    font-size: 1.1em;
+    color: #01ffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 1.1em 1.8em;
+}
+
+.menu-list .menu-act {
+    color: #c82547;
+}
+
+.registry {
+    display: flex;
+    align-items: center;
+    padding-top: 0.2em;
+}
+
+.social {
+    border-right: 2px solid #ffffff;
+    height: 1.3em;
+    padding: 0 1.1em;
+}
+
+.social img {
+    height: 1.3em;
+}
+
+.register {
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 1.1em;
+    border-right: 2px solid #ffffff;
+    letter-spacing: 2px;
+}
+
+.country {
+    font-size: 1.1em;
+    color: #01ffff;
+    text-decoration: none;
+    padding: 0 1.1em;
+    letter-spacing: 2px;
+}
+
+.country-block-d {
+    display: none;
+    position: absolute;
+    top: 6.5em;
+    right: 5em;
+    background: #22223c;
+    border-radius: 0.7em;
+    padding: 0.5em;
+}
+
+.country-list-d {
+    display: flex;
+    flex-direction: column;
+}
+
+.country-list-d a {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    padding: 1em;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: 'Swiss-BC';
+}
+
+.country-list-d p {
+    margin-left: 1em;
+}
+
+hr,
+.d-none,
+.none,
+.country-block,
+.country-list,
+.menu-ham,
+.registry-mob,
+.follow,
+.mob,
+.legal-mob,
+.country-nav {
+    display: none;
+}
+
+.codesend {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(5, 32, 79, 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.codebox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -8em;
+}
+
+.closecode {
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.closecode img {
+    height: 25px;
+    padding: 1em;
+    margin: auto;
+}
+
+.modalcontent {
+    background: #ffffff;
+    width: 32em;
+}
+
+.modalcontent-inner {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 3em;
+    align-items: center;
+    text-align: center;
+    font-family: 'Swiss-BC';
+    margin-top: 6em;
+    color: #001f58;
+}
+
+.modalcontent-inner img {
+    width: 200px;
+}
+
+.code {
+    margin: 1em 2em;
+    margin-top: -2em;
+}
+
+.code h2 {
+    margin-top: -2em;
+}
+
+.modalicon {
+    background: url(../imgs/home/code-generate.png) center;
+    background-size: cover;
+    width: 25em;
+    height: 25em;
+}
+
+.modalcontent-inner h2 {
+    font-size: 3em;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.modalcontent-inner p {
+    font-family: 'Dinnex-R';
+    color: #142457;
+    margin-bottom: 4em;
+    font-size: 1.2em;
+}
+
+.modalcontent-inner a {
+    text-decoration: none;
+}
+
+.modalcontent-inner a p {
+    font-size: 1.1em;
+    border-bottom: 0.1em solid #142457;
+    margin-bottom: 2em;
+}
+
+.modalbutton {
+    color: #f8fafd;
+    letter-spacing: 4px;
+    font-size: 1.4em;
+    padding: 1em 3em;
+    background: #292663;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+}
+
+.askcode {
+    display: flex;
+}
+
+.askcode p {
+    margin-bottom: 0;
+    font-size: 0.8em;
+}
+
+.askcode a {
+    color: #142457;
+}
+
+.code input {
+    height: 40px;
+    width: 100%;
+    margin: 1em 0.5em;
+    margin-top: 0.5em;
+    padding-left: 1em;
+    font-family: 'Dinnex-R';
+    color: #292663;
+    border: 1px solid #e1e1e9;
+}
+
+.border-left {
+    border-left: 3px solid;
+    border-image-source: linear-gradient(0deg, rgba(0, 1, 76, 1) 10%, rgba(10, 6, 255, 1) 30%, rgba(0, 1, 76, 1) 70%);
+    border-image-slice: 1;
+}
+
+.border-top {
+    border-top: 3px solid;
+    border-image-source: linear-gradient(90deg, rgba(0, 1, 76, 1) 5%, rgba(10, 6, 255, 1) 20%, rgba(0, 1, 76, 1) 90%);
+    border-image-slice: 1;
+}
+
+.border-right {
+    border-right: 3px solid;
+    border-image-source: linear-gradient(180deg, rgba(0, 1, 76, 1) 10%, rgba(10, 6, 255, 1) 30%, rgba(0, 1, 76, 1) 70%);
+    border-image-slice: 1;
+}
+
+.border-bottom {
+    border-bottom: 3px solid;
+    border-image-source: linear-gradient(-90deg, rgba(0, 1, 76, 1) 15%, rgba(10, 6, 255, 1) 20%, rgba(0, 1, 76, 1) 100%);
+    border-image-slice: 1;
+}
+
+@media screen and (max-width: 1440px) {
+    .register,
+    .country {
+        font-size: 0.75em;
+        padding: 0.1em 1.1em;
+    }
+    .country-list-d a {
+        padding: 0.5em;
+    }
+    .menu-list a {
+        font-size: 0.75em;
+        padding: 1em 1.5em;
+    }
+    .social,
+    .social img {
+        height: 1.1em;
+    }
+    .country-block-d {
+        right: 2em;
+        z-index: 1;
+    }
+    .closecode img {
+        height: 15px;
+        padding: 0.5em;
+    }
+    .modalcontent {
+        margin-bottom: 0;
+        width: 20em;
+    }
+    .modalcontent-inner {
+        margin-top: 2em;
+    }
+    .modalcontent-inner img {
+        width: 170px;
+    }
+    .modalcontent h2 {
+        font-size: 1.8em;
+    }
+    .modalcontent p {
+        font-size: 0.8em;
+    }
+    .modalbutton {
+        padding: 0.7em 2.5em;
+        font-size: 1em;
+    }
+    .code {
+        margin-top: -2em;
+    }
+    .modalicon {
+        width: 20em;
+        height: 20em;
+    }
+    .modalcontent-inner a p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .country-block-d {
+        padding: 0 0.5em;
+    }
+    .country-list-d {
+        margin: 0.5em;
+    }
+    .country-list-d img {
+        height: 35px;
+    }
+    .country-list-d a {
+        padding: 0.3em 0;
+    }
+    .codebox {
+        margin-top: -2em;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .menu-list a {
+        padding: 1em 1em;
+        font-size: 0.7em;
+    }
+    #tq-logo img {
+        width: 50px;
+    }
+    #bf-logo img {
+        width: 160px;
+    }
+    .register,
+    .social,
+    .country {
+        padding: 0 1em;
+        font-size: 0.7em;
+    }
+    .country-list-d a {
+        font-size: 0.7em;
+        padding: 0.8em 0;
+    }
+    .country-list-d img {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    #tq-logo img {
+        width: 50px;
+    }
+    #bf-logo img {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-list a {
+        padding: 1em 0.9em;
+        font-size: 0.6em;
+    }
+    .register,
+    .social,
+    .country {
+        padding: 0 0.9em;
+        font-size: 0.6em;
+    }
+    .country-list-d a {
+        font-size: 0.6em;
+    }
+    .country-list-d img {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background: url(../imgs/home/mobile-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    .menu {
+        justify-content: space-between;
+        box-shadow: 0 2px 6px #051f4f;
+    }
+    .logo {
+        margin-left: 3em;
+    }
+    .mob {
+        position: absolute;
+        top: 6.2em;
+        background: rgba(1, 5, 47, 0.55);
+        background-size: cover;
+        display: flex;
+        padding-bottom: 0.5em;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        top: 100px;
+        z-index: 2;
+    }
+    .margin {
+        margin-bottom: 150px;
+    }
+    .mob a {
+        margin: 0.6em;
+        padding: 0.5em;
+        font-size: 1.5em;
+        color: #ffffff;
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
+    .mob a img {
+        margin-left: 0.5em;
+    }
+    .menuhr {
+        display: block;
+        width: 27em;
+        color: #6c7d99;
+        margin: 2em 0;
+    }
+    .country-nav {
+        display: block;
+    }
+    .menu-act {
+        border: 6px solid #c01731;
+    }
+    hr {
+        display: block;
+        width: auto;
+    }
+    .registry,
+    .country-block-d,
+    .menu-list {
+        display: none;
+    }
+    .registry-mob {
+        display: inline;
+        font-family: 'Swiss-BC';
+        font-size: 1.8em;
+        color: #01ffff;
+        margin-left: 6em
+    }
+    .menu-ham {
+        display: block;
+        margin-right: 2em;
+    }
+    .country-block {
+        display: none;
+        flex-direction: row;
+        padding: 1em;
+        border-top: 2px solid #636b70;
+    }
+    .countrr-marg {
+        display: flex;
+        background: #22223c;
+    }
+    .country-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .country-list a {
+        display: flex;
+        font-size: 1em;
+        margin: 0.5em 1.5em;
+    }
+    .country-list a img {
+        width: 50px;
+    }
+    .country-list p {
+        margin-left: 1em;
+        font-size: 1em;
+    }
+    .country-name {
+        font-size: 1em;
+        padding: 0 2em;
+        display: flex;
+    }
+    .country-name img {
+        margin-right: 1em;
+    }
+    .follow {
+        margin: 0.5em 0;
+        padding-bottom: 0.5em;
+        font-size: 1.5em;
+        color: #ffffff;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+    }
+    .follow p {
+        margin: 0;
+        padding-top: 0.8em;
+        margin-left: 0.5em;
+        font-size: 1em;
+    }
+    .follow a {
+        border: 0;
+        margin: 0;
+        padding-left: 2em;
+        font-size: 0.5em;
+    }
+    .social img {
+        height: 40px;
+    }
+    .legal-mob {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 0.6em 0 0;
+        border-top: 1px solid #ffffff;
+        margin-top: 1em;
+    }
+    .legal-mob a {
+        font-size: 1.2em;
+        padding-bottom: 0.1em;
+        margin-bottom: 1.5em;
+        text-decoration: underline;
+    }
+    .codesend {
+        background: none;
+        backdrop-filter: none;
+        align-items: unset;
+        top: 100px;
+        z-index: 1;
+    }
+    .codebox {
+        width: 100%;
+        margin: 0;
+    }
+    .closecode {
+        position: relative;
+        top: 8em;
+        right: 10em;
+    }
+    .closecode img {
+        height: 35px;
+        padding: 0;
+    }
+    .modalcontent {
+        width: 100%;
+        height: 100%;
+        margin-top: -55px;
+    }
+    .modalcontent-inner {
+        margin: 10em 8em;
+    }
+    .modalcontent-inner p {
+        font-family: 'Swiss-R';
+        font-size: 2em;
+    }
+    .code {
+        margin: 2em 8em;
+        margin-top: 2em;
+    }
+    .modalicon {
+        width: 35em;
+        height: 35em;
+    }
+    .modalcontent img {
+        width: 250px;
+    }
+    .modalcontent h2 {
+        font-family: 'Swiss-H';
+        font-size: 3.8em;
+    }
+    .code p {
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+    .code input {
+        height: 50px;
+        width: 60%;
+    }
+    .modalbutton {
+        margin: 0.5em 0;
+        font-size: 1.4em;
+    }
+    .askcode p,
+    .modalcontent-inner a p {
+        font-size: 1em;
+    }
+    .country-nav img {
+        width: 15px;
+    }
+    @media screen and (max-height: 1025px) {
+        .mob a {
+            font-size: 1.35em;
+        }
+        .follow p {
+            font-size: 0.85em;
+        }
+        .follow a {
+            padding: 0;
+        }
+        .legal-mob {
+            font-size: 0.8em;
+        }
+        .legal-mob a {
+            margin: 1.15em;
+        }
+        .country-list p {
+            font-size: 0.8em;
+        }
+    }
+    @media screen and (max-height: 540px) {
+        .mob a {
+            font-size: 1em;
+        }
+        .follow p {
+            font-size: 0.7em;
+        }
+        .social img {
+            height: 30px;
+        }
+        .follow p {
+            padding-top: 0.5em;
+        }
+        .mob {
+            margin-bottom: 70px;
+        }
+        .country-list a img {
+            width: 40px;
+        }
+        .modalcontent {
+            margin-top: -55px;
+        }
+        .code {
+            margin: 7em 8em;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu {
+        height: 5em;
+    }
+    #tq-logo img {
+        width: 32px;
+    }
+    #bf-logo img {
+        width: 100px;
+    }
+    .menu-ham img {
+        width: 30px;
+    }
+    .mob {
+        top: 80px;
+        padding-bottom: 0.8em;
+    }
+    .mob a {
+        font-size: 0.85em;
+    }
+    .menuhr {
+        width: 18em;
+        margin: 1em 0;
+    }
+    .country-block {
+        padding: 1em;
+    }
+    .country-list a {
+        font-size: 0.6em;
+    }
+    .country-list p {
+        font-size: 1.1em;
+    }
+    .country-list a img {
+        width: 40px;
+    }
+    .follow {
+        font-size: 1.2em;
+    }
+    .follow a {
+        padding-left: 1em;
+    }
+    .social img {
+        height: 30px;
+    }
+    .follow p {
+        font-size: 0.8em;
+    }
+    .margin {
+        margin-bottom: 105px;
+    }
+    .codebox {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .codesend {
+        top: 80px;
+    }
+    .closecode {
+        top: 2em;
+        right: 8em;
+    }
+    .closecode img {
+        height: 25px;
+    }
+    .modalcontent-inner {
+        margin: 1em 2em;
+    }
+    .modalicon {
+        width: 21em;
+        height: 21em;
+    }
+    .modalcontent h2 {
+        font-size: 2.8em;
+        margin-top: -1em;
+    }
+    .modalcontent-inner p {
+        font-size: 1em;
+    }
+    .modalcontent img {
+        width: 200px;
+        margin: 4em 0;
+    }
+    .country-nav img {
+        width: 10px;
+    }
+    .registry-mob {
+        font-size: 1.4em;
+        margin-left: 3em;
+    }
+    .modalcontent {
+        margin-top: -45px;
+    }
+    .modalbutton {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .mob {
+        padding-bottom: 1em;
+    }
+    .mob a {
+        padding: 0.3em;
+        font-size: 1em;
+        margin: 1em;
+    }
+    .logo {
+        margin-left: 2em;
+    }
+    .country-list a {
+        font-size: 0.7em;
+        margin: 0.5em 1em;
+    }
+    .country-list p {
+        font-size: 1em;
+    }
+    .country-list a img {
+        width: 35px;
+    }
+    .follow {
+        font-size: 0.9em;
+        margin-bottom: 1.5em;
+    }
+    .follow a {
+        font-size: 0.6em;
+        margin: 0;
+    }
+    .follow p {
+        font-size: 1em;
+        padding-top: 1.5em;
+    }
+    .modalcontent-inner {
+        margin: 7em 2em;
+    }
+    .modalcontent img {
+        width: 200px;
+        margin-top: 0;
+        margin-bottom: 5em;
+    }
+    .modalcontent h2 {
+        font-size: 2em;
+        margin-top: -2em;
+    }
+    .modalcontent-inner p {
+        font-size: 1em;
+    }
+    .code {
+        margin: 2em;
+        margin-top: 3em;
+        margin-bottom: 6em;
+    }
+    .closecode {
+        right: 4em;
+    }
+    .modalicon {
+        width: 22em;
+        height: 22em;
+    }
+    .code p {
+        margin-bottom: 1em;
+    }
+    .margin {
+        margin-bottom: 94px;
+    }
+    .registry-mob {
+        font-size: 1.2em;
+        margin-left: 1em;
+    }
+    @media screen and (max-height: 740px) {
+        .mob {
+            padding-bottom: 1.21em;
+        }
+        .mob a {
+            margin: 0.5em;
+        }
+        .legal-mob a {
+            margin: 1em;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .mob {
+        padding-bottom: 1.15em;
+    }
+    .mob a {
+        font-size: 0.9em;
+        margin: 1.1em 0;
+    }
+    .country-list p {
+        font-size: 0.8em;
+    }
+    .country-list a img {
+        width: 35px;
+        height: 35px;
+    }
+    .menu-ham {
+        margin-right: 1em;
+    }
+    .menu-ham img {
+        width: 31px;
+    }
+    .logo {
+        margin-left: 1.5em;
+    }
+    #tq-logo {
+        margin-right: 1em;
+    }
+    #tq-logo img {
+        width: 27px;
+    }
+    #bf-logo {
+        border-left: 1px solid #ffffff;
+    }
+    #bf-logo img {
+        width: 90px;
+    }
+    .legal-mob {
+        margin-top: 0;
+    }
+    @media screen and (max-height: 670px) {
+        .legal-mob {
+            margin-top: 1em;
+        }
+        .follow {
+            margin-bottom: 1em;
+        }
+        .mob a {
+            margin: 0.6em 0;
+        }
+        .legal-mob a {
+            margin: 0.7em;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #tq-logo img {
+        width: 25px;
+    }
+    #bf-logo img {
+        width: 85px;
+    }
+    .mob a {
+        font-size: 0.83em;
+        margin: 0.5em;
+    }
+    .follow p {
+        font-size: 0.9em;
+    }
+    .closecode {
+        top: 4em;
+    }
+    .closecode img {
+        height: 20px;
+    }
+    .modalcontent img {
+        width: 130px;
+        margin-top: 4em;
+        margin-bottom: 5em;
+    }
+    .modalicon {
+        width: 16em;
+        height: 16em;
+    }
+    .modalbutton {
+        font-size: 1em;
+    }
+    .code input {
+        height: 25px;
+    }
+    .askcode p,
+    .modalcontent-inner a p {
+        font-size: 0.7em;
+    }
+    .legal-mob {
+        padding-bottom: 0;
+    }
+    .legal-mob a {
+        margin: 1em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .menu {
+        height: 4em;
+    }
+    .social img {
+        height: 20px;
+    }
+    .mob {
+        top: 64px;
+        padding-top: 0.6em;
+        padding-bottom: 0.3em;
+    }
+    .mob a {
+        font-size: 0.74em;
+    }
+    .legal-mob {
+        padding-bottom: 0.4em;
+    }
+    .follow p {
+        font-size: 0.8em;
+    }
+    .social img {
+        height: 20px;
+    }
+    .menuhr {
+        width: 13em;
+        margin: 0.5em 0;
+    }
+    .country-list a img {
+        width: 30px;
+        height: 30px;
+    }
+    .country-list p {
+        font-size: 0.9em;
+    }
+    .logo {
+        margin-left: 1.2em;
+    }
+    .margin {
+        margin-bottom: 87px;
+    }
+    .registry-mob {
+        font-size: 1em;
+        margin-left: 0;
+    }
+    .codesend {
+        top: 64px;
+    }
+}

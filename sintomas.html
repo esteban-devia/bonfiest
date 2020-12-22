@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/compras.css">
+    <link rel="stylesheet" href="css/symptoms.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <title>Document</title>
+    <meta name="description" content="Meta description">
+    <link rel="canonical" href="URL_HERE" />
+    <link rel="alternate" href="URL_HERE" hreflang="es" />
+    <meta name="Keywords" content="KEYWORDS" />
+    <meta property="og:type" content="TYPE_HERE" />
+    <meta property="og:title" content="TITLE HERE" />
+    <meta property="og:url" content="URL_HERE" />
+    <meta property="og:image" content="URL_HERE" />
+</head>
+
+<body>
+
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <a href="https://www.tqconfiable.com/" id="tq-logo" rel="nofollow">
+                    <img src="imgs/header/tq-logo.png" alt="tq-logo">
+                </a>
+                <a href="index.html" id="bf-logo">
+                    <img src="imgs/header/bfp-logo.png" alt="bf-logo">
+                </a>
+            </div>
+            <nav class="menu-list">
+                <a href="index.html">HOME</a>
+                <a href="productos.html">PRODUCTOS</a>
+                <a href="sintomas.html" class="menu-act">SÍNTOMAS</a>
+                <a href="preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a>
+                <a href="comprar.html">COMPRAR</a>
+                <a href="javascript:void(0)" class="country-nav" onclick="openCountry()">PAÍS<img src="imgs/header/down-arrow-mob.png" alt="down arrow"></a>
+                <div class="country-block">
+                    <div class="country-list">
+                        <a href="#"><img src="imgs/header/Colombia.png" alt="">
+                            <p>COLOMBIA</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/RepDom.png" alt="">
+                            <p>R. DOM</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/Salvador.png" alt="">
+                            <p>EL SALVADOR</p>
+                        </a>
+                    </div>
+                    <div class="country-list">
+                        <a href="#"><img src="imgs/header/Ecuador.png" alt="">
+                            <p>ECUADOR</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/Guatemala.png" alt="">
+                            <p>GUATEMALA</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/costa-rica.png" alt="">
+                            <p>COSTA RICA</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="follow">
+                    <p>SÍGUENOS</p>
+                    <a href="https://www.instagram.com/?hl=es-la" class="social" rel="nofollow" target="_blank">
+                        <img src="imgs/header/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://www.facebook.com/" class="social" rel="nofollow" target="_blank">
+                        <img src="imgs/header/facebook.png" alt="facebook">
+                    </a>
+                </div>
+                <div class="legal-mob">
+                    <a href="terminos.html">CONDICIONES DE USO</a>
+                    <a href="terminos.html">POLÍTICAS DE PRIVACIDAD</a>
+                    <a href="contacto.html">CONTÁCTANOS</a>
+                </div>
+            </nav>
+            <div class="registry">
+                <a href="javascript:void(0)" class="register" onclick="openRegister()">REGISTRO</a>
+                <a href="https://www.instagram.com/?hl=es-la" class="social" rel="nofollow" target="_blank">
+                    <img src="imgs/header/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.facebook.com/" class="social" rel="nofollow" target="_blank">
+                    <img src="imgs/header/facebook.png" alt="facebook">
+                </a>
+                <a href="javascript:void(0)" class="country" onclick="openCountryD()">PAÍS <img src="imgs/header/down-arrow.png" alt="down arrow"></a>
+            </div>
+            <a class="registry-mob" onclick="openRegister()">REGISTRO</a>
+            <a href="javascript:void(0)" class="menu-ham" onclick="openMenu()">
+                <img src="imgs/header/ham.png" alt="menu-ham" id="menu-ham">
+            </a>
+        </div>
+        <div class="country-block-d">
+            <div class="country-list-d">
+                <a href="#" class="country-name"><img src="imgs/header/Colombia.png" alt="">
+                    <p>COLOMBIA</p>
+                </a>
+                <a href="#"><img src="imgs/header/Ecuador.png" alt="">
+                    <p>ECUADOR</p>
+                </a>
+            </div>
+            <div class="country-list-d">
+                <a href="#"><img src="imgs/header/RepDom.png" alt="">
+                    <p>R. DOM</p>
+                </a>
+                <a href="#"><img src="imgs/header/Guatemala.png" alt="">
+                    <p>GUATEMALA</p>
+                </a>
+            </div>
+            <div class="country-list-d">
+                <a href="#"><img src="imgs/header/Salvador.png" alt="">
+                    <p>EL SALVADOR</p>
+                </a>
+                <a href="#"><img src="imgs/header/costa-rica.png" alt="">
+                    <p>COSTA RICA</p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="symptomsgrid">
+        <div class="symptom-desk">
+            <h1 class="symptomtitle">SÍNTOMAS</h1>
+        </div>
+        <div class="symptom-mob">
+            <div class="border-top">
+                <div class="border-bottom">
+                    <h1 class="symptomtitle">SÍNTOMAS</h1>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="carditem" onclick="openSymptoms(1)">
+                <div class="cardimg">
+                    <img src="imgs/symptoms/dolorcabeza.jpg" alt="">
+                    <div class="cardtitle">
+                        <a>Dolor de Cabeza</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carditem" onclick="openSymptoms(2)">
+                <div class="cardimg">
+                    <img src="imgs/symptoms/malestargeneral.jpg" alt="">
+                    <div class="cardtitle">
+                        <a>Malestar General</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carditem" onclick="openSymptoms(3)">
+                <div class="cardimg">
+                    <img src="imgs/symptoms/reboteestomacal.jpg" alt="">
+                    <div class="cardtitle">
+                        <a>Rebote Estomacal</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carditem" onclick="openSymptoms(4)">
+                <div class="cardimg">
+                    <img src="imgs/symptoms/dolorcorporal.jpg" alt="">
+                    <div class="cardtitle">
+                        <a>Dolor Corporal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="symptom">
+        <div class="symptom-desk">
+            <h1 class="symptomtitle">SÍNTOMAS</h1>
+        </div>
+        <div class="back-mob">
+            <a href="sintomas.html"><img src="imgs/home/back-arrow.png" alt=""></a>
+        </div>
+        <div class="slider slider-symp">
+            <div class="slider-second symp-second">
+                <a class="prev prev-symp" onclick="nextSlide(-1)"><img src="imgs/home/left-arrow.png" alt=""></a>
+                <!-- DOLOR DE CABEZA -->
+                <div class="symp-desc">
+                    <div class="symp-desc-second">
+                        <div class="description-text">
+                            <div class="symp-title">
+                                <a class="prev-mob" onclick="nextSlide(-1)"><img src="imgs/home/left-arrow-mob.png" alt=""></a>
+                                <h1 id="symp-title-h1">DOLOR DE CABEZA</h1>
+                                <a class="next-mob" onclick="nextSlide(1)"><img src="imgs/home/right-arrow-mob.png" alt=""></a>
+                            </div>
+                            <h1>DOLOR DE CABEZA</h1>
+                            <p>El dolor de cabeza es una de las condiciones más comunes en los adultescentes. Ocurre generalmente en zonas de la cabeza como el cráneo y la cara. Tiene múltiples causas, entre las que se incluyen la tensión y el estrés, la
+                                migraña, alteraciones de la mordida, deshidratación, insomnio, alteraciones del sueño, entre otras. Comúnmente se acompaña de mareo, náuseas,sensibilidad a la luz y al ruido.
+                            </p>
+                            <div class="symp-cta">
+                                <a href="">Ver producto <img src="imgs/symptoms/right-arrow.png" alt=""></a>
+                                <a href="comprar.html">Comprar <img src="imgs/symptoms/right-arrow.png" alt=""> </a>
+                            </div>
+                        </div>
+                        <div class="symp-img">
+                            <div class="close-symp">
+                                <a onclick="closeSymptoms()"><img src="imgs/symptoms/close-icon.png" alt=""></a>
+                            </div>
+                            <picture>
+                                <source media="(max-width: 900px)" srcset="imgs/symptoms/dolorcabeza-innermob.jpg">
+                                <img src="imgs/symptoms/dolorcabeza-innerdesk.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <!-- MALESTAR GENERAL -->
+                <div class="symp-desc">
+                    <div class="symp-desc-second">
+                        <div class="description-text">
+                            <div class="symp-title">
+                                <a class="prev-mob" onclick="nextSlide(-1)"><img src="imgs/home/left-arrow-mob.png" alt=""></a>
+                                <h1 id="symp-title-h1">MALESTAR GENERAL</h1>
+                                <a class="next-mob" onclick="nextSlide(1)"><img src="imgs/home/right-arrow-mob.png" alt=""></a>
+                            </div>
+                            <h1>MALESTAR GENERAL</h1>
+                            <p>La sensación de malestar general del adultescente consiste en un dolor leve general que se puede concentrar en la espalda, el cuerpo y las articulaciones. Produce la sensación de no querer moverse, puede alterar el apetito
+                                y el sueño. Estos síntomas están relacionados con las respuestas del sistema inmune a la enfermedad y se presentan con el fin que el adultescente se quede quieto y pueda dedicar toda su energía a la recuperación.
+                            </p>
+                            <div class="symp-cta">
+                                <a href="">Ver producto <img src="imgs/symptoms/right-arrow.png" alt=""></a>
+                                <a href="comprar.html">Comprar <img src="imgs/symptoms/right-arrow.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="symp-img">
+                            <div class="close-symp">
+                                <a onclick="closeSymptoms()"><img src="imgs/symptoms/close-icon.png" alt=""></a>
+                            </div>
+                            <picture>
+                                <source media="(max-width: 900px)" srcset="imgs/symptoms/malestargeneral-innermob.jpg">
+                                <img src="imgs/symptoms/malestargeneral-innerdesk.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <!-- REBOTE ESTOMACAL -->
+                <div class="symp-desc">
+                    <div class="symp-desc-second">
+                        <div class="description-text">
+                            <div class="symp-title">
+                                <a class="prev-mob" onclick="nextSlide(-1)"><img src="imgs/home/left-arrow-mob.png" alt=""></a>
+                                <h1 id="symp-title-h1">REBOTE ESTOMACAL</h1>
+                                <a class="next-mob" onclick="nextSlide(1)"><img src="imgs/home/right-arrow-mob.png" alt=""></a>
+                            </div>
+                            <h1>REBOTE ESTOMACAL</h1>
+                            <p>En algunas ocasiones el funcionamiento natural del estómago del adultescente se ve alterado por una revoltura, caracterizada por vueltas que se traducen en una sensación de vómito, mareo y nauseas.
+                            </p>
+                            <div class="symp-cta">
+                                <a href="">Ver producto <img src="imgs/symptoms/right-arrow.png" alt=""></a>
+                                <a href="comprar.html">Comprar <img src="imgs/symptoms/right-arrow.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="symp-img">
+                            <div class="close-symp">
+                                <a onclick="closeSymptoms()"><img src="imgs/symptoms/close-icon.png" alt=""></a>
+                            </div>
+                            <picture>
+                                <source media="(max-width: 900px)" srcset="imgs/symptoms/reboteestomacal-innermob.jpg">
+                                <img src="imgs/symptoms/reboteestomacal-innerdesk.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <!-- DOLOR CORPORAL -->
+                <div class="symp-desc">
+                    <div class="symp-desc-second">
+                        <div class="description-text">
+                            <div class="symp-title">
+                                <a class="prev-mob" onclick="nextSlide(-1)"><img src="imgs/home/left-arrow-mob.png" alt=""></a>
+                                <h1 id="symp-title-h1">DOLOR CORPORAL</h1>
+                                <a class="next-mob" onclick="nextSlide(1)"><img src="imgs/home/right-arrow-mob.png" alt=""></a>
+                            </div>
+                            <h1>DOLOR CORPORAL</h1>
+                            <p>Los músculos y las articulaciones son los encargados de darle la movilidad a los adultescentes, pero en ocasiones puede existir un esfuerzo por encima de su capacidad que produce una sensación dolorosa.
+                            </p>
+                            <div class="symp-cta">
+                                <a href="">Ver producto <img src="imgs/symptoms/right-arrow.png" alt=""></a>
+                                <a href="comprar.html">Comprar <img src="imgs/symptoms/right-arrow.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="symp-img">
+                            <div class="close-symp">
+                                <a onclick="closeSymptoms()"><img src="imgs/symptoms/close-icon.png" alt=""></a>
+                            </div>
+                            <picture>
+                                <source media="(max-width: 900px)" srcset="imgs/symptoms/dolorcorporal-innermob.jpg">
+                                <img src="imgs/symptoms/dolorcorporal-innerdesk.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <a class="next next-symp" onclick="nextSlide(1)"><img src="imgs/home/right-arrow.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="registry-form">
+        <div class="alert-mob">
+            <div class="back-mob back-reg">
+                <a href=""><img src="imgs/home/back-arrow.png" alt=""></a>
+            </div>
+            <p> <img src="imgs/header/alert-icon.png" alt=""> ¡Por favor regístrese antes de comprar!</p>
+        </div>
+        <div class="border-left formBg">
+            <div class="border-top">
+                <div class="border-right">
+                    <div class="border-bottom">
+                        <div class="registry-container">
+                            <div class="registry-inner">
+                                <div>
+                                    <div class="registry-alert">
+                                        <p> <img src="imgs/header/alert-icon.png" alt=""> ¡Por favor regístrese antes de comprar!</p>
+                                        <div class="close-reg">
+                                            <a onclick="closeReg()"><img src="imgs/symptoms/close-icon.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="formulary">
+                                        <h1>REGISTRO</h1>
+                                        <p>con su red social</p>
+                                        <div class="social-reg">
+                                            <a href="">
+                                                <img src="imgs/header/google-icon.png" alt="">
+                                            </a>
+                                            <a href="">
+                                                <img src="imgs/header/facebook-icon.png" alt="">
+                                            </a>
+                                        </div>
+                                        <form action="" name="registryForm" id="registryForm" class="form-reg" autocomplete="off">
+                                            <div class="inputs">
+                                                <div class="singleinput">
+                                                    <label class="textfield">
+                                        <input placeholder=" " name="name" id="name">
+                                        <span>Nombre*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                                </div>
+                                                <div class="singleinput">
+                                                    <label class="textfield">
+                                        <input placeholder=" " name="lastname" id="lastname">
+                                        <span>Apellido*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="inputs selectinp">
+                                                <div class="wrap">
+                                                    <div class="select">
+                                                        <select class="select-text" required name="gender" id="gender">
+                                            <option value="" disabled hidden selected></option>
+                                            <option value="female">Mujer</option>
+                                            <option value="male">Hombre</option>
+                                            <option value="other">Otro</option>
+                                        </select>
+                                                        <span class="select-label">Seleccionar Género</span>
+                                                        <img src="imgs/symptoms/right-arrow.png" alt="">
+                                                    </div>
+                                                    <p id="errorgender">&nbsp;</p>
+                                                </div>
+                                            </div>
+                                            <div class="reg-idType">
+                                                <div class="inputs">
+                                                    <p>Típo de documento:</p>
+                                                    <div>
+                                                        <div class="idtype">
+                                                            <input type="radio" name="idtype" id="CC" value="CedulaC">
+                                                            <span class="idspan"><img src="imgs/header/id-icon.png" alt="">Cédula de ciudadanía</span>
+                                                        </div>
+                                                        <div class="idtype">
+                                                            <input type="radio" name="idtype" id="CE" value="CedulaE">
+                                                            <span class="idspan"><img src="imgs/header/id-icon.png" alt="">Cédula de extranjería</span>
+                                                        </div>
+                                                    </div>
+                                                    <p id="erroridtype">&nbsp;</p>
+                                                </div>
+                                            </div>
+                                            <div class="inputs">
+                                                <label class="textfield" id="numberid">
+                                    <input placeholder=" " type="number" name="idnumber" id="idnumber">
+                                    <span>Número de documento*</span>
+                                    <p class="errormesage">&nbsp;</p>
+                                </label>
+                                            </div>
+                                            <div class="inputs">
+                                                <div class="singleinput">
+                                                    <label class="textfield">
+                                        <input placeholder=" " name="email" id="email">
+                                        <span>Email*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                                </div>
+                                                <div class="singleinput">
+                                                    <label class="textfield">
+                                        <input placeholder=" " type="number" name="celphone" id="celphone">
+                                        <span>Celular*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="check-reg">
+                                                <div class="checkterms">
+                                                    <input type="checkbox" name="terms" id="tyc" value="Acepto">
+                                                    <label for="tyc">Acepto <a href="terminos.html">términos y condiciones</a> y <a href="terminos.html">políticas de tratamiento de datos*</a></label>
+                                                </div>
+                                                <div class="checkterms">
+                                                    <input type="checkbox" name="age" id="legalage" value="Acepto">
+                                                    <label for="tyc">Soy mayor de edad*</label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" form="registryForm" id="register" onclick="return validateForm()">REGISTRARSE</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <footer>
+            <div>
+                <div>
+                    <a href="terminos.html"><strong>CONDICIONES DE USO</strong></a>
+                </div>
+                <div>
+                    <a href="terminos.html"><strong>POLÍTICAS DE PRIVACIDAD</strong></a>
+                </div>
+                <div>
+                    <a href="contacto.html"><strong>CONTÁCTANOS</strong></a>
+                </div>
+                <span><strong>TODOS LOS DERECHOS RESERVADOS BONFIEST</strong></span>
+            </div>
+            <span class="footer-mob">TODOS LOS DERECHOS RESERVADOS BONFIEST</span>
+            <p>Elimina los malestares causados por los excesos de comidas y bebidas no alcohólicas. Es un medicamento no exeder su consumo. Leer indicaciones y contraindicaciones en el empaque. Si persisten los síntomas consulte a su médico. Medicamento
+                de venta libre. Registro sanitario Invima 2015m-0004285-r1.
+            </p>
+        </footer>
+
+        <script src="js/header.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/symptoms.js"></script>
+        <script src="js/register.js"></script>
+</body>
+
+</html>
