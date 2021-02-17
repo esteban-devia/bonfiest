@@ -384,8 +384,6 @@
         padding: 0.67em;
         position: unset;
         letter-spacing: 10px;
-        border-left: 2px solid #01074f;
-        border-right: 2px solid #01074f;
     }
     .slider h1 {
         display: block;
@@ -588,6 +586,7 @@
     }
     .prod-inner-second {
         padding: 0 3em;
+        margin-bottom: 5em;
     }
     .prod-box img {
         width: 350px;

@@ -281,8 +281,6 @@
         padding: 0.3em;
         position: unset;
         letter-spacing: 10px;
-        border-left: 2px solid #01074f;
-        border-right: 2px solid #01074f;
     }
     .cards {
         width: auto;
